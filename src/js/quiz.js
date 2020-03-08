@@ -1,15 +1,15 @@
 var counter = 0;
 var right = 0;
 var questions = [
-    ["Where did Maya and Keshal meet?", "Spring break, Miami - cliché, we know", "At Columbia University, obviously", "Through a friend who set them up - Hi, Friend! You know who you are ;)", "In the one Anthropology class Keshal took while at Columbia. It was called 'Magic, Witchcraft and Religion'. He thought it 'sounded cool'.", "1"],
+    ["Where did Nupur and Mohit meet?", "Spring break, Miami - cliché, we know", "At Columbia University, obviously", "Through a friend who set them up - Hi, Friend! You know who you are ;)", "In the one Anthropology class Mohit took while at Columbia. It was called 'Magic, Witchcraft and Religion'. He thought it 'sounded cool'.", "1"],
     ["How long have they been together?", "6 years", "7 years", "8 years", "An eternity. Seriously, what took them so long?", "4"],
     ["How long were they in a long distance relationship?", "They were in a long distance relationship??", "3 years", "4 years", "5 years", "4"],
-    ["Where did they get engaged?", "Miami, Florida - where it all began", "Lisbon, Portugal - Maya thought it was a vacation with Keshal's family", "Boston, Massachusetts - on a random Sunday, with Otis Redding on the record player, over brunch", "New York City, New York - it was a full on flash mob", "2"],
-    ["Who is the bride-zilla between the two?", "Keshal", "Maya", "1"],
+    ["Where did they get engaged?", "Miami, Florida - where it all began", "Lisbon, Portugal - Nupur thought it was a vacation with Mohit's family", "Boston, Massachusetts - on a random Sunday, with Otis Redding on the record player, over brunch", "New York City, New York - it was a full on flash mob", "2"],
+    ["Who is the bride-zilla between the two?", "Mohit", "Nupur", "1"],
     ["What is their preferred term of endearment?", "Boo", "Babe", "Hon", "Dear", "1"],
-    ["Which of these is a nickname Maya has for Keshal?", "Schmoomoo", "Boo Radley", "KP", "Keshal Facial", "All of the above", "5"],
-    ["Which of these is a nickname Keshal has for Maya? ", "Clown", "Ma", "Booface", "Garfield", "All of the above", "5"],
-    ["Over the years, Maya and Keshal have had a lot of adventures together. What <i>haven't</i> they done together?", "Climbed a volcano", "Scuba dived in fresh water caves", "Taken a woodworking class", "Gone to a music festival", "All of the above", "3"]
+    ["Which of these is a nickname Nupur has for Mohit?", "Schmoomoo", "Boo Radley", "KP", "Mohit Facial", "All of the above", "5"],
+    ["Which of these is a nickname Mohit has for Nupur? ", "Clown", "Ma", "Booface", "Garfield", "All of the above", "5"],
+    ["Over the years, Nupur and Mohit have had a lot of adventures together. What <i>haven't</i> they done together?", "Climbed a volcano", "Scuba dived in fresh water caves", "Taken a woodworking class", "Gone to a music festival", "All of the above", "3"]
 ];
 
 $(document).ready(function () {
@@ -38,13 +38,13 @@ $(document).ready(function () {
                     var result = $("<div id='question' class='field is-size-4'><strong class='has-text-success'>You got all " + right +"/9 right.</strong></br><div class='is-size-5'> Wow! You got them all right! There's no way you're not a stalker. Not that you need it, but scroll down to read the full story!</div></div>").hide();
                 }
                 else if (right >= 7){
-                    var result = $("<div id='question' class='field is-size-4'><strong class='has-text-success'>You got " + right +"/9 right.</strong></br><div class='is-size-5'> Pretty good! You must be quite close to Maya and Keshal... or you're a stalker. Scroll down for the full story!</div></div>").hide();
+                    var result = $("<div id='question' class='field is-size-4'><strong class='has-text-success'>You got " + right +"/9 right.</strong></br><div class='is-size-5'> Pretty good! You must be quite close to Nupur and Mohit... or you're a stalker. Scroll down for the full story!</div></div>").hide();
                 }
                 else if (right < 7 && right >= 3){
                     var result = $("<div id='question' class='field is-size-4'><strong class='orange'>You got " + right +"/9 right.</strong></br><div class='is-size-5'> You've got some work to do! Scroll down and read up...</div></div>").hide();
                 }
                 else {
-                    var result = $("<div id='question' class='field is-size-4'><strong class='has-text-danger'>You got " + right +"/9 right.</strong></br><div class='is-size-5'> Wow you did terribly! Do you even know Maya and Keshal!? Scroll down and take notes...</div></div>").hide();
+                    var result = $("<div id='question' class='field is-size-4'><strong class='has-text-danger'>You got " + right +"/9 right.</strong></br><div class='is-size-5'> Wow you did terribly! Do you even know Nupur and Mohit!? Scroll down and take notes...</div></div>").hide();
                 }
                 $('#couple-20').replaceWith('<div id="couple-20" class="column is-4 is-offset-1"><p class="title is-2 "><span class="rsvp-label">Your Results</span></p></div>');
                 $('#question').replaceWith(result);
